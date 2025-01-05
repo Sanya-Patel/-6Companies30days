@@ -8,5 +8,6 @@ public:
             steps += abs(nums[i] - median); //Adding absolute difference
         }
         return steps;
+        
     }
 };
