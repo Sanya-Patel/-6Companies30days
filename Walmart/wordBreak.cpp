@@ -23,6 +23,7 @@ public:
         return Dp[idx];
     }
     bool wordBreak(string s, vector<string>& wordDict) {
+        
         unordered_set<string> setmp(wordDict.begin(), wordDict.end());
         vector<int> Dp(s.size(), 0);
         return solve(0, s, setmp, Dp);
